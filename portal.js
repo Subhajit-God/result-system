@@ -10,8 +10,8 @@
    ============================================================ */
 
 const PORTAL_CONFIG = {
-  appsScriptUrl: 'PASTE-YOUR-APPS-SCRIPT-WEB-APP-URL-HERE',
-  publicToken: 'PASTE-YOUR-PUBLIC_TOKEN-HERE'
+  appsScriptUrl: 'https://script.google.com/macros/s/AKfycbwhFSxfrvc5kUus7IbVUVyHXqsWKly0In5OJ7BUk5J67MUgdiRx08fWsZQD1Y07KkE/exec',
+  publicToken: '0987654321'
 };
 
 async function lookupResult(studentId, dob, evaluation) {
