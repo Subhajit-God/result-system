@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Your Result</title>
+<link rel="stylesheet" href="portal.css">
+</head>
+<body>
+
+  <div class="portal-wrap">
+    <header class="portal-header" id="portal-header">
+      <div class="seal">RM</div>
+      <div>
+        <h1 id="portal-school-name">Result Portal</h1>
+        <p class="sub">Check your Summative Evaluation result</p>
+      </div>
+    </header>
+
+    <main class="portal-card" id="lookup-card">
+      <div id="lookup-alert"></div>
+      <form id="lookup-form">
+        <div class="field">
+          <label>Student ID</label>
+          <input type="text" id="in-studentId" required autocomplete="off">
+        </div>
+        <div class="field">
+          <label>Date of Birth</label>
+          <input type="text" id="in-dob" placeholder="YYYY-MM-DD" required autocomplete="off">
+        </div>
+        <div class="field">
+          <label>Evaluation</label>
+          <select id="in-evaluation">
+            <option>1st Summative Evaluation</option>
+            <option>2nd Summative Evaluation</option>
+            <option>3rd Summative Evaluation</option>
+          </select>
+        </div>
+        <button type="submit" class="btn" id="lookup-btn">Check Result</button>
+      </form>
+    </main>
+
+    <section class="portal-card result-card" id="result-card" style="display:none;"></section>
+
+    <footer class="portal-footer">Your Student ID and Date of Birth are only used to look up your own result and are not stored anywhere by this page.</footer>
+  </div>
+
+  <script src="portal.js"></script>
+</body>
+</html>
